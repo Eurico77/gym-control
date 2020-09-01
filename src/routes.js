@@ -5,14 +5,13 @@ routes.get('/', (req, res) => {
   res.redirect('/instructors')
 })
 
-
-routes.get('/test', (req, res) => {
-  res.send("ola")
+routes.get('/instructors', (req, res) => {
+  return res.render('instructors/index')
 })
 
 
-routes.get('/', (req, res) => {
-  res.render('/members')
+routes.get('/members', (req, res) => {
+  return	res.render('/members')
 })
 
 

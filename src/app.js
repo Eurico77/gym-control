@@ -16,7 +16,7 @@ nunjucks.configure("src/views", {
 });
 
 app.listen(8080, () => {
-  return console.log('rodando');
+  return console.log('server is runing');
 });
 
 

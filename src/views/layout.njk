@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<link rel="stylesheet" href="style.css">
 		<head>
 
 				{% block head %}
@@ -8,11 +9,13 @@
 		</head>
 		<body>
 				<header>
-						<div>
-								<a href="/instructors">Instrucors</a>
+						<div class="links">
+								<a href="/">Instructors</a>
 								<a href="/members">Members</a>
 						</div>
 				</header>
+
+				{%	block content %} {%	endblock %}
 
 		</body>
 </html>
