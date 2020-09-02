@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css">
 		<head>
 
 				{% block head %}
@@ -8,14 +8,24 @@
 				{% endblock %}
 		</head>
 		<body>
-				<header>
-						<div class="links">
-								<a href="/" class = "active" >Instructors</a>
-								<a href="/members">Members</a>
+				<header >
+						<div class="header-content">
+								<div class="header-menu">
+										<div class="links">
+												<a href="/" class="active">Instructors</a>
+												<a href="/members">Members</a>
+												<a href="/members">Sobre</a>
+										</div>
+										<div class="login">
+												<a href="">Log in</a>
+												<a href="" class="login-button">Sign Up</a>
+										</div>
+								</div>
 						</div>
+
 				</header>
 
-				{%	block content %} {%	endblock %}
+				{% block content %}{% endblock %}
 
 		</body>
 </html>
