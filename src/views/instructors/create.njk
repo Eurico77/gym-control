@@ -1,0 +1,43 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+		<form class="card-instructor" method="POST" action="/instructors">
+				<div class="avatar">
+						<img src="https://patch.com/img/cdn/users/22848544/2016/01/raw/2016015695646a12293.jpeg" alt="">
+				</div>
+				<div class="details">
+
+						<h3>Novo instrutor</h3>
+
+						<div class="item">
+								<div>Avatar URL</div>
+								<div>
+										<input type="url" name="avatar">
+								</div>
+						</div>
+
+						<div class="item">
+								<div>Instrutor</div>
+								<div>
+										<input type="text" name="name">
+								</div>
+						</div>
+						<div class="item">
+								<div>Idade</div>
+								<div>23</div>
+						</div>
+						<div class="item">
+								<div>Especialidade</div>
+								<div>
+										<span>Pilates</span>
+										<span>Hipertrofia</span>
+								</div>
+						</div>
+						<div class="item">
+								<div>Sexo</div>
+								<div>Maculino</div>
+						</div>
+
+				</div>
+		</form>
+{% endblock content %}
