@@ -242,3 +242,24 @@ a.login-button:hover {
 .button-instructor:hover {
 	background-color: #334a83;
 }
+
+
+input {
+	width: 100%;
+	outline: none;
+}
+
+input[type='radio'] {
+	width: initial;
+	margin-right: 4px;
+}
+
+input[type='date'] {
+	font-size: 1rem;
+	opacity: 0.5;
+}
+
+input::placeholder {
+	font-size: 1rem;
+	opacity: 0.5;
+}
