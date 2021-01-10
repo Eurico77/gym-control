@@ -12,32 +12,47 @@
 						<div class="item">
 								<div>Avatar URL</div>
 								<div>
-										<input type="url" name="avatar">
+										<input
+										type="url"
+										name="avatar"
+										placeholder="Digite a url da imagem"
+										>
 								</div>
 						</div>
 
 						<div class="item">
 								<div>Instrutor</div>
 								<div>
-										<input type="text" name="name">
+										<input
+										type="text"
+										name="name"
+										placeholder="Digite o seu nome"
+										>
 								</div>
 						</div>
 						<div class="item">
-								<div>Idade</div>
-								<div>23</div>
+								<div>Data de nascimento</div>
+								<input type="date" name="birth">
 						</div>
 						<div class="item">
-								<div>Especialidade</div>
+								<div>Área de atuação</div>
 								<div>
-										<span>Pilates</span>
-										<span>Hipertrofia</span>
+										<input
+										type="text"
+										name="services"
+										placeholder="Digite sua área de atuação"
+										>
 								</div>
 						</div>
 						<div class="item">
 								<div>Sexo</div>
-								<div>Maculino</div>
+								<div>
+										<span><input type="radio" name="gender" value="M">Masculino</span>
+										<span><input type="radio" name="gender" value="F">Feminino</span>
+								</div>
 						</div>
 
 				</div>
+							<button type="submit" class="button-instructor">Salvar</button>
 		</form>
 {% endblock content %}
